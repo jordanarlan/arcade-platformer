@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.3.0" name="arcade_platformer" tilewidth="128" tileheight="128" tilecount="62" columns="0">
- <editorsettings>
-  <export target="arcade_platformer.tsx" format="tsx"/>
- </editorsettings>
+<tileset version="1.10" tiledversion="1.10.1" name="arcade_platformer" tilewidth="128" tileheight="128" tilecount="41" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="128" height="128" source="images/ground/Grass/grass.png"/>
  </tile>
  <tile id="1">
-  <image width="128" height="128" source="images/ground/Grass/grassCenter_round.png"/>
+  <image width="128" height="128" source="images/ground/Grass/grassCenter.png"/>
  </tile>
  <tile id="2">
-  <image width="128" height="128" source="images/ground/Grass/grassCenter.png"/>
+  <image width="128" height="128" source="images/ground/Grass/grassCenter_round.png"/>
  </tile>
  <tile id="3">
   <image width="128" height="128" source="images/ground/Grass/grassCliff_left.png"/>
@@ -32,32 +29,22 @@
   <image width="128" height="128" source="images/ground/Grass/grassCorner_right.png"/>
  </tile>
  <tile id="9">
-  <image width="128" height="128" source="images/ground/Grass/grassHalf_left.png"/>
+  <image width="128" height="128" source="images/ground/Grass/grassHalf.png"/>
  </tile>
  <tile id="10">
-  <image width="128" height="128" source="images/ground/Grass/grassHalf_mid.png"/>
+  <image width="128" height="128" source="images/ground/Grass/grassHalf_left.png"/>
  </tile>
  <tile id="11">
-  <image width="128" height="128" source="images/ground/Grass/grassHalf_right.png"/>
+  <image width="128" height="128" source="images/ground/Grass/grassHalf_mid.png"/>
  </tile>
  <tile id="12">
-  <image width="128" height="128" source="images/ground/Grass/grassHalf.png"/>
+  <image width="128" height="128" source="images/ground/Grass/grassHalf_right.png"/>
  </tile>
  <tile id="13">
   <image width="128" height="128" source="images/ground/Grass/grassHill_left.png"/>
-  <objectgroup draworder="index">
-   <object id="2" x="0.545455" y="0.909091">
-    <polygon points="-0.545455,-0.909091 127.455,127.091 -0.545455,127.091"/>
-   </object>
-  </objectgroup>
  </tile>
  <tile id="14">
   <image width="128" height="128" source="images/ground/Grass/grassHill_right.png"/>
-  <objectgroup draworder="index">
-   <object id="1" x="0" y="128">
-    <polygon points="0,0 128,0 128,-128"/>
-   </object>
-  </objectgroup>
  </tile>
  <tile id="15">
   <image width="128" height="128" source="images/ground/Grass/grassLeft.png"/>
@@ -68,157 +55,73 @@
  <tile id="17">
   <image width="128" height="128" source="images/ground/Grass/grassRight.png"/>
  </tile>
- <tile id="29">
+ <tile id="18">
   <image width="128" height="128" source="images/HUD/hudHeart_empty.png"/>
  </tile>
- <tile id="30">
+ <tile id="19">
   <image width="128" height="128" source="images/HUD/hudHeart_full.png"/>
  </tile>
- <tile id="33">
-  <image width="128" height="128" source="images/HUD/hudJewel_blue.png"/>
+ <tile id="20">
+  <image width="128" height="128" source="images/HUD/hudHeart_half.png"/>
  </tile>
- <tile id="35">
-  <image width="128" height="128" source="images/HUD/hudJewel_green.png"/>
- </tile>
- <tile id="37">
-  <image width="128" height="128" source="images/HUD/hudJewel_red.png"/>
- </tile>
- <tile id="39">
-  <image width="128" height="128" source="images/HUD/hudJewel_yellow.png"/>
- </tile>
- <tile id="41">
-  <image width="128" height="128" source="images/HUD/hudKey_blue.png"/>
- </tile>
- <tile id="43">
-  <image width="128" height="128" source="images/HUD/hudKey_green.png"/>
- </tile>
- <tile id="45">
-  <image width="128" height="128" source="images/HUD/hudKey_red.png"/>
- </tile>
- <tile id="47">
-  <image width="128" height="128" source="images/HUD/hudKey_yellow.png"/>
- </tile>
- <tile id="53">
+ <tile id="21">
   <image width="128" height="128" source="images/HUD/hudX.png"/>
  </tile>
- <tile id="54">
-  <properties>
-   <property name="point_value" type="int" value="5"/>
-  </properties>
+ <tile id="22">
   <image width="128" height="128" source="images/items/coinBronze.png"/>
  </tile>
- <tile id="55">
-  <properties>
-   <property name="point_value" type="int" value="20"/>
-  </properties>
+ <tile id="23">
   <image width="128" height="128" source="images/items/coinGold.png"/>
  </tile>
- <tile id="56">
-  <properties>
-   <property name="point_value" type="int" value="10"/>
-  </properties>
+ <tile id="24">
   <image width="128" height="128" source="images/items/coinSilver.png"/>
  </tile>
- <tile id="60">
+ <tile id="25">
   <image width="128" height="128" source="images/items/flagGreen_down.png"/>
  </tile>
- <tile id="61">
+ <tile id="26">
   <image width="128" height="128" source="images/items/flagGreen1.png"/>
-  <animation>
-   <frame tileid="61" duration="250"/>
-   <frame tileid="62" duration="250"/>
-  </animation>
  </tile>
- <tile id="62">
+ <tile id="27">
   <image width="128" height="128" source="images/items/flagGreen2.png"/>
  </tile>
- <tile id="69">
-  <image width="128" height="128" source="images/items/gemBlue.png"/>
- </tile>
- <tile id="70">
-  <image width="128" height="128" source="images/items/gemGreen.png"/>
- </tile>
- <tile id="71">
-  <image width="128" height="128" source="images/items/gemRed.png"/>
- </tile>
- <tile id="72">
-  <image width="128" height="128" source="images/items/gemYellow.png"/>
- </tile>
- <tile id="77">
-  <image width="128" height="128" source="images/items/star.png"/>
- </tile>
- <tile id="84">
-  <image width="128" height="128" source="images/tiles/boxCrate_double.png"/>
- </tile>
- <tile id="95">
-  <image width="128" height="128" source="images/tiles/brickBrown.png"/>
- </tile>
- <tile id="96">
-  <image width="128" height="128" source="images/tiles/brickGrey.png"/>
- </tile>
- <tile id="104">
-  <image width="128" height="128" source="images/tiles/doorOpen_mid.png"/>
- </tile>
- <tile id="105">
+ <tile id="28">
   <image width="128" height="128" source="images/tiles/doorOpen_top.png"/>
  </tile>
- <tile id="106">
-  <image width="128" height="128" source="images/tiles/fence.png"/>
- </tile>
- <tile id="107">
-  <image width="128" height="128" source="images/tiles/fenceBroken.png"/>
- </tile>
- <tile id="108">
+ <tile id="29">
   <image width="128" height="128" source="images/tiles/grass.png"/>
  </tile>
- <tile id="109">
+ <tile id="30">
   <image width="128" height="128" source="images/tiles/ladderMid.png"/>
  </tile>
- <tile id="110">
+ <tile id="31">
   <image width="128" height="128" source="images/tiles/ladderTop.png"/>
  </tile>
- <tile id="111">
-  <image width="128" height="128" source="images/tiles/lava.png"/>
- </tile>
- <tile id="112">
-  <image width="128" height="128" source="images/tiles/lavaTop_high.png"/>
- </tile>
- <tile id="113">
-  <image width="128" height="128" source="images/tiles/lavaTop_low.png"/>
- </tile>
- <tile id="126">
+ <tile id="32">
   <image width="128" height="128" source="images/tiles/signExit.png"/>
  </tile>
- <tile id="127">
+ <tile id="33">
   <image width="128" height="128" source="images/tiles/signLeft.png"/>
  </tile>
- <tile id="128">
+ <tile id="34">
   <image width="128" height="128" source="images/tiles/signRight.png"/>
  </tile>
- <tile id="141">
+ <tile id="35">
+  <image width="128" height="128" source="images/tiles/torch2.png"/>
+ </tile>
+ <tile id="36">
   <image width="128" height="128" source="images/tiles/torch1.png"/>
  </tile>
- <tile id="142">
-  <image width="128" height="128" source="images/tiles/torch2.png"/>
-  <animation>
-   <frame tileid="141" duration="250"/>
-   <frame tileid="142" duration="250"/>
-  </animation>
- </tile>
- <tile id="144">
+ <tile id="37">
   <image width="128" height="128" source="images/tiles/water.png"/>
  </tile>
- <tile id="145">
+ <tile id="38">
   <image width="128" height="128" source="images/tiles/waterTop_high.png"/>
  </tile>
- <tile id="146">
+ <tile id="39">
   <image width="128" height="128" source="images/tiles/waterTop_low.png"/>
  </tile>
- <tile id="150">
-  <image width="128" height="128" source="images/tiles/grass2.png"/>
-  <animation>
-   <frame tileid="108" duration="250"/>
-   <frame tileid="150" duration="250"/>
-  </animation>
+ <tile id="40">
+  <image width="128" height="128" source="images/tiles/doorOpen_mid.png"/>
  </tile>
 </tileset>
