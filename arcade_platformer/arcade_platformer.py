@@ -104,9 +104,8 @@ class MyGame(arcade.Window):
         self.gui_camera = arcade.Camera(self.width, self.height)
 
         # Map name
-        map_name = ":resources:tiled_maps/map_with_ladders.json"
-        #f":resources:tiled_maps/map2_level_{self.level}.json"
-
+        map_name = f"assets/map_level_{self.level}.tmx"
+        
         # Layer Specific Options for the Tilemap
         layer_options = {
             LAYER_NAME_PLATFORMS: {
@@ -115,7 +114,9 @@ class MyGame(arcade.Window):
             LAYER_NAME_COINS: {
                 "use_spatial_hash": True,
             },
-            #LAYER_NAME_DONT_TOUCH: {"use_spatial_hash": True,},
+            LAYER_NAME_DONT_TOUCH: {
+                "use_spatial_hash": True,
+                },
             LAYER_NAME_MOVING_PLATFORMS: {
                 "use_spatial_hash": False,
             },
@@ -270,6 +271,17 @@ class MyGame(arcade.Window):
         # Update walls, used with moving platforms
         self.scene.update([LAYER_NAME_MOVING_PLATFORMS])
         
+        # See if the wall hit a boundary and needs to reverse direction.
+        for wall in self.scene[LAYER_NAME_MOVING_PLATFORMS]:
+            if wall.boundary_right and wall.right > wall.boundary_right and wall.change_x > 0:
+               wall.change_x *= -1
+            if wall.boundary_left and wall.left < wall.boundary_left and wall.change_x < 0:
+                wall.change_x *= -1
+            if wall.boundary_top and wall.top > wall.boundary_top and wall.change_y > 0:
+                wall.change_y *= -1
+            if wall.boundary_bottom and wall.bottom < wall.boundary_bottom and wall.change_y < 0:
+                wall.change_y *= -1
+
          # See if we hit any coins
         coin_hit_list = arcade.check_for_collision_with_list(
             self.player_sprite, self.scene[LAYER_NAME_COINS]
@@ -291,16 +303,16 @@ class MyGame(arcade.Window):
 
             arcade.play_sound(self.game_over)
 
-        # Did the player touch something they should not?
-        #if arcade.check_for_collision_with_list(
-        #    self.player_sprite, self.scene[LAYER_NAME_DONT_TOUCH]
-        #):
-        #    self.player_sprite.change_x = 0
-        #    self.player_sprite.change_y = 0
-        #    self.player_sprite.center_x = PLAYER_START_X
-        #    self.player_sprite.center_y = PLAYER_START_Y
+        #Did the player touch something they should not?
+        if arcade.check_for_collision_with_list(
+            self.player_sprite, self.scene[LAYER_NAME_DONT_TOUCH]
+        ):
+            self.player_sprite.change_x = 0
+            self.player_sprite.change_y = 0
+            self.player_sprite.center_x = PLAYER_START_X
+            self.player_sprite.center_y = PLAYER_START_Y
 
-        #    arcade.play_sound(self.game_over)
+            arcade.play_sound(self.game_over)
 
         # See if the user got to the end of the level
         if self.player_sprite.center_x >= self.end_of_map:
