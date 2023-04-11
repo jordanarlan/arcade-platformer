@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="arcade_platformer" tilewidth="128" tileheight="128" tilecount="41" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="arcade_platformer" tilewidth="128" tileheight="128" tilecount="43" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="128" height="128" source="images/ground/Grass/grass.png"/>
@@ -123,5 +123,11 @@
  </tile>
  <tile id="40">
   <image width="128" height="128" source="images/tiles/doorOpen_mid.png"/>
+ </tile>
+ <tile id="41">
+  <image width="128" height="128" source="images/tiles/boxCrate_double.png"/>
+ </tile>
+ <tile id="42">
+  <image width="128" height="128" source="images/tiles/spikes.png"/>
  </tile>
 </tileset>
