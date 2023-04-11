@@ -9,7 +9,7 @@ SCREEN_HEIGHT = 650
 SCREEN_TITLE = "Platformer"
 
 # Constants used to scale our sprites from their original size
-CHARACTER_SCALING = 0.5
+CHARACTER_SCALING = 0.1
 TILE_SCALING = 0.5
 COIN_SCALING = 0.5
 
@@ -27,6 +27,17 @@ class MyGame(arcade.Window):
 
         # Call the parent class and set up the window
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
+        #init timer for gui
+        self.total_time = 0.0
+        self.timer_text = arcade.Text(
+            text="00:00:00",
+            start_x= 0, #SCREEN_WIDTH // 2,
+            start_y = SCREEN_HEIGHT,
+            color=arcade.color.WHITE,
+            font_size=25,
+            anchor_x  = 'left', 
+            anchor_y  = 'top',
+        )
 
         # Our Scene Object
         self.scene = None
@@ -54,7 +65,9 @@ class MyGame(arcade.Window):
 
     def setup(self):
         """Set up the game here. Call this function to restart the game."""
-
+        # Set up the timer
+        self.total_time = 0.0
+        
         # Set up the Camera
         self.camera = arcade.Camera(self.width, self.height)    
 
@@ -72,7 +85,7 @@ class MyGame(arcade.Window):
         self.scene.add_sprite_list("Walls", use_spatial_hash=True)
 
         # Set up the player, specifically placing it at these coordinates.
-        image_source = "assets/images/player/alienGreen_front.png"
+        image_source = "assets/images/player/Cright.png"
         self.player_sprite = arcade.Sprite(image_source, CHARACTER_SCALING)
         self.player_sprite.center_x = 64
         self.player_sprite.center_y = 128
@@ -125,6 +138,9 @@ class MyGame(arcade.Window):
         # Activate the GUI camera before drawing GUI elements
         self.gui_camera.use()
 
+        # Draw the timer text
+        self.timer_text.draw()
+
         # Draw our score on the screen, scrolling it with the viewport
         score_text = f"Score: {self.score}"
         arcade.draw_text(
@@ -174,6 +190,21 @@ class MyGame(arcade.Window):
     
     def on_update(self, delta_time):
         """Movement and game logic"""
+        
+        # Accumulate the total time
+        self.total_time += delta_time
+
+        # Calculate minutes
+        minutes = int(self.total_time) // 60
+
+        # Calculate seconds by using a modulus (remainder)
+        seconds = int(self.total_time) % 60
+
+        # Calculate 100s of a second
+        seconds_100s = int((self.total_time - seconds) * 100)
+
+        # Use string formatting to create a new text string for our timer
+        self.timer_text.text = f"{minutes:02d}:{seconds:02d}:{seconds_100s:02d}"
 
         # Move the player with the physics engine
         self.physics_engine.update()
