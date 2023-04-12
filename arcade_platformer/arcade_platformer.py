@@ -273,13 +273,13 @@ class MyGame(arcade.Window):
         
         # See if the wall hit a boundary and needs to reverse direction.
         for wall in self.scene[LAYER_NAME_MOVING_PLATFORMS]:
-            if wall.boundary_right and wall.right > wall.boundary_right and wall.change_x > 0:
+            if wall.boundary_right and wall.right > wall.boundary_right :
                wall.change_x *= -1
-            if wall.boundary_left and wall.left < wall.boundary_left and wall.change_x < 0:
+            if wall.boundary_left and wall.left < wall.boundary_left:
                 wall.change_x *= -1
-            if wall.boundary_top and wall.top > wall.boundary_top and wall.change_y > 0:
+            if wall.boundary_top and wall.top > wall.boundary_top: #and wall.change_y > 0:
                 wall.change_y *= -1
-            if wall.boundary_bottom and wall.bottom < wall.boundary_bottom and wall.change_y < 0:
+            if wall.boundary_bottom and wall.bottom < wall.boundary_bottom: #and wall.change_y < 0:
                 wall.change_y *= -1
 
          # See if we hit any coins
