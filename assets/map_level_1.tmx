@@ -2,6 +2,11 @@
 <map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="10" nextobjectid="38">
  <tileset firstgid="1" source="arcade_platformer.tsx"/>
  <tileset firstgid="44" source="images/tiles/tiles.tsx"/>
+ <layer id="7" name="Ladders" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzwEJAAAIwDCbaP+UlhAU2RL8EQAAwEe1HTAktwOG+LjlywcAcEsDKgoAnQ==
+  </data>
+ </layer>
  <layer id="1" name="Platforms" width="50" height="30">
   <data encoding="base64" compression="zlib">
    eJztl8sKgzAQRS+hXdRN8Tdc5uOyciX0v5ssCmE01OjkMWEOXBgIDvcQEQTkY1sXYEKqB+2tHm2xUQBZHhb7/vHZCKhHX3B6TCQ10fvoC/XoC/UAHj5PriKD8yFRlDvUeJfePnPB/aUJ36fQ/+VjGnfpncVna12CgeCxQqbLQmYHfpca/xJHHiVcSkC7x7ODHJezHjkucyI5pHZcCfX4ufx7ziSSQ2pHzXwBgRoaLg==
@@ -82,11 +87,6 @@
  <layer id="6" name="Don't Touch" width="50" height="30">
   <data encoding="base64" compression="zlib">
    eJzt2DEKgDAQBMCrfYgIfsr8/xO2gqSIxFwCM7D9Hmx1EfBdibiyO/Sw+h3lEQBgrDO7QCdbdgGqW1ptY7Ut2RgAvP35zzkaMrO9ITO4AQO/B2E=
-  </data>
- </layer>
- <layer id="7" name="Ladders" width="50" height="30">
-  <data encoding="base64" compression="zlib">
-   eJztzwEJAAAIwDCbaP+UlhAU2RL8EQAAwEe1HTAktwOG+LjlywcAcEsDKgoAnQ==
   </data>
  </layer>
 </map>
