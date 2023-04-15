@@ -1,35 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="8" nextobjectid="12">
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="10" nextobjectid="38">
  <tileset firstgid="1" source="arcade_platformer.tsx"/>
+ <tileset firstgid="44" source="images/tiles/tiles.tsx"/>
+ <layer id="7" name="Ladders" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzwEJAAAIwDCbaP+UlhAU2RL8EQAAwEe1HTAktwOG+LjlywcAcEsDKgoAnQ==
+  </data>
+ </layer>
  <layer id="1" name="Platforms" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt17EKwCAMRVGr7aCL4v9/bNO1kEHTGod74K7hTYIhAAAAq/IKAHZxSpf3CAC/qNLhPcLgeZ+6lKXkvAXYAX8JzGpKX9xYWVQaod1Y2Q2HlQM2
+   eJztl8sKgzAQRS+hXdRN8Tdc5uOyciX0v5ssCmE01OjkMWEOXBgIDvcQEQTkY1sXYEKqB+2tHm2xUQBZHhb7/vHZCKhHX3B6TCQ10fvoC/XoC/UAHj5PriKD8yFRlDvUeJfePnPB/aUJ36fQ/+VjGnfpncVna12CgeCxQqbLQmYHfpca/xJHHiVcSkC7x7ODHJezHjkucyI5pHZcCfX4ufx7ziSSQ2pHzXwBgRoaLg==
   </data>
  </layer>
  <objectgroup id="3" name="Moving Platforms">
-  <object id="5" gid="10" x="2048" y="2052" width="128" height="128">
+  <object id="5" gid="10" x="2048" y="2052" width="256" height="128">
    <properties>
-    <property name="boundary_bottom" type="float" value="1000"/>
-    <property name="boundary_top" type="float" value="100"/>
-    <property name="change_y" type="float" value="1"/>
+    <property name="boundary_bottom" type="float" value="1380"/>
+    <property name="boundary_top" type="float" value="2030"/>
+    <property name="change_y" type="float" value="2"/>
    </properties>
   </object>
-  <object id="7" gid="10" x="2176" y="2052" width="128" height="128">
+  <object id="25" gid="10" x="4737.3" y="919.233" width="256" height="128">
    <properties>
-    <property name="boundary_bottom" type="float" value="1000"/>
-    <property name="boundary_top" type="float" value="100"/>
-    <property name="change_y" type="float" value="1"/>
+    <property name="boundary_bottom" type="float" value="2050"/>
+    <property name="boundary_top" type="float" value="2730"/>
+    <property name="change_y" type="float" value="2"/>
    </properties>
   </object>
-  <object id="11" gid="10" x="600" y="3020" width="128" height="128"/>
+  <object id="12" gid="10" x="200" y="3000" width="256" height="128">
+   <properties>
+    <property name="boundary_left" type="float" value="200"/>
+    <property name="boundary_right" type="float" value="1024"/>
+    <property name="change_x" type="float" value="2"/>
+   </properties>
+  </object>
+  <object id="21" gid="10" x="5130.39" y="1687.95" width="256" height="128">
+   <properties>
+    <property name="boundary_left" type="float" value="3400"/>
+    <property name="boundary_right" type="float" value="4400"/>
+    <property name="change_x" type="float" value="2"/>
+   </properties>
+  </object>
+  <object id="24" gid="10" x="4804.41" y="1378.27" width="256" height="128">
+   <properties>
+    <property name="boundary_left" type="float" value="3200"/>
+    <property name="boundary_right" type="float" value="4300"/>
+    <property name="change_x" type="float" value="2"/>
+   </properties>
+  </object>
+  <object id="23" gid="10" x="5643.8" y="1924.28" width="256" height="128">
+   <properties>
+    <property name="boundary_left" type="float" value="3400"/>
+    <property name="boundary_right" type="float" value="4500"/>
+    <property name="change_x" type="float" value="2"/>
+   </properties>
+  </object>
+  <object id="22" gid="10" x="5122.24" y="538.879" width="256" height="128">
+   <properties>
+    <property name="boundary_left" type="float" value="3800"/>
+    <property name="boundary_right" type="float" value="4324"/>
+    <property name="change_x" type="float" value="2"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="2" name="Coins">
   <object id="1" gid="24" x="964" y="3144" width="128" height="128"/>
   <object id="2" gid="24" x="1856" y="1864" width="128" height="128"/>
+  <object id="13" gid="24" x="2496" y="959" width="128" height="128"/>
+  <object id="16" gid="24" x="320" y="2636" width="128" height="128"/>
+  <object id="19" gid="24" x="2968" y="2760" width="128" height="128"/>
+  <object id="20" gid="24" x="4488" y="2632" width="128" height="128"/>
+ </objectgroup>
+ <objectgroup id="9" name="Keys">
+  <object id="35" gid="157" x="5960" y="396" width="128" height="128"/>
  </objectgroup>
  <layer id="4" name="Background" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt1DEKACAMA8B+RHf//0F3UaQIinC3N82UCAAAAOAn9XUBgM+VmG/pyb6Ot6uszI9dx5bI4o4OIFUBNw==
+   eJzt1rENgDAMBMCfhIZVYA4YLaNCSYFAEYRI6K63/yvLCQDwtiUpvTsAAH3sf8DaOmNoHQDwc3POb+mT+3qcHS921WTcdZwqdvGNDer3A1s=
   </data>
  </layer>
  <layer id="5" name="Foreground" width="50" height="30">
@@ -39,12 +86,7 @@
  </layer>
  <layer id="6" name="Don't Touch" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztw0EJAAAIBDDTiP0TmuF+IhusCgAAAACATyZ4WQcvWHo1A1s=
-  </data>
- </layer>
- <layer id="7" name="Ladders" width="50" height="30">
-  <data encoding="base64" compression="zlib">
-   eJztzwEJAAAIwDCbaP+UlhAU2RL8EQAAwEe1HTAktwOG+LjlywcAcEsDKgoAnQ==
+   eJzt2DEKgDAQBMCrfYgIfsr8/xO2gqSIxFwCM7D9Hmx1EfBdibiyO/Sw+h3lEQBgrDO7QCdbdgGqW1ptY7Ut2RgAvP35zzkaMrO9ITO4AQO/B2E=
   </data>
  </layer>
 </map>
