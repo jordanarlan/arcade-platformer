@@ -508,7 +508,7 @@ class MyGame(arcade.Window):
 
             # Load the next level
             self.setup()
-
+            
         # Position the camera
         self.center_camera_to_player()
 
