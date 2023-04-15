@@ -2,14 +2,19 @@
 <map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="10" nextobjectid="56">
  <tileset firstgid="1" source="arcade_platformer.tsx"/>
  <tileset firstgid="44" source="images/tiles/tiles.tsx"/>
+ <layer id="7" name="Ladders" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1rERACAMw8AMCPswPj0VRS7RgX4Cq3OEpGyre8Bhdg9IMroHJLntoPfawWIHy28ddHZIovKns9jBYgfLKx1ShQ1o9Aeb
+  </data>
+ </layer>
  <layer id="4" name="Background" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt1DsKACEMRVG3ZjOuQlzFgO5eSxsZFBM/cw+8LoQoGmPO51YP0GA7an3JIzWIsFjyVkkTe/fc4Ug9AEAH+xnQwV/Dn/DeAdxs9x0XBHvvfnbgSwYdywWi
+   eJzt1DsKACEMRVFXJkyjq5BZheDytbSRQTHxM/fA60KIojHmfH71AA1PR20ocVKDCEslsYqd2LvnDkfqAQA62M+ADv4a/oT3DuBmu++4V7D37mcHvmRADAVn
   </data>
  </layer>
  <layer id="1" name="Platforms" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztmNEKwyAMRf0m/22je9jL1g9vA3uQEKOJsYllBwKttfRebTSYUiyytwAj7uRjO+PF9IHnjyK4vlq+6P7T8U5L90zwmEijV7enxxFA95502rMgIkPp622LRE0znocVfYz0u5JMXLfyIqKPkpZODx+wD3FrNZe/LZ1X+QAP7zOev+gF+/Bcd6UeLNbVcq+18KidB4zFmGu9jc6DtE6aUeuABot5WJnoe8EdoXIB8KznNf9B5H9Hos3CR4SxiKABo6kNRnzMGgOqlvOq60ZyVVM7a33U9nhqnZOeJXGaJLUF/s5WabegV9eK5zp/eA4ZuEYb
+   eJzlmN0OgzAIhftMPoBv5eIudjO3954kNiEE2wLtSvUkxPjTyCciJ4bgS1PvBCrpShzrHs/ENXB+QZG6VquN7L8L1uTyzmk2rKXPRBqleZcwRo5JEK0FeX+CrD6Yg6r0mAfdhYO+TyNycPLIATlRjlx/e+QAcRycenDAHPqSwN8wnEspB7e2pYDhtcfjiJzOOHrODykD7g98TCI8a2swShmiOA5rPlo2TR2i5iD3SS28JeSgqUOUxSd6Edcfo2oUDtpn67GN73gPDs13JLemZz0kPDU4PHgqj/XQeAMLR6s6cF7O6uu09bD0qsY7aznOZjw3y6X/klI5SbwFvg/2Ja38xj+8zihz8E76AZl+TP8=
   </data>
  </layer>
  <objectgroup id="3" name="Moving Platforms">
@@ -43,11 +48,6 @@
  <objectgroup id="9" name="Keys">
   <object id="38" gid="157" x="3712" y="3200" width="128" height="128"/>
  </objectgroup>
- <layer id="7" name="Ladders" width="50" height="30">
-  <data encoding="base64" compression="zlib">
-   eJzt1kERADAIxEAEUv92aoEHUzI0q+DyuwhJ253pAU1yekCTage91w4WO1h+66CzQxKVP53FDhY7WLZ0SC9c/R4HIw==
-  </data>
- </layer>
  <layer id="5" name="Foreground" width="50" height="30">
   <data encoding="base64" compression="zlib">
    eJzt2G0KABAMgOGdzw3c/yJ+raSwJm30Pn/RJB8zEUQq0RNIyrou2q86YnjGRGO/AHjdi3cvkM2YD3CuAAD4g77pu79/336aB6xiWWoQt/OQWd5DfQSZNTtzBfc=
