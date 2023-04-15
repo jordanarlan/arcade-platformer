@@ -1,33 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="10" nextobjectid="38">
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="10" nextobjectid="47">
  <tileset firstgid="1" source="arcade_platformer.tsx"/>
  <tileset firstgid="44" source="images/tiles/tiles.tsx"/>
  <layer id="7" name="Ladders" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+   eJztzwENADAIwDAE/v7tYIIAIa2CLQIAAADo9qcDirzpgCI+dvGxy5UP6JCelQIW
   </data>
  </layer>
  <layer id="1" name="Platforms" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+   eJztmNEKgDAIRfdN+7dgvdaPr4cehgynlilxD8iIEq+rbZdKAYCnXbEv7m9DcM9aOcn1IchZ6faEzok2onR/SeT7AQAAAKSM51WNFOJAVG9an2TxC/AZICN0nbV7jPxWLWs/816o0fZGHxnmIoMGSh1Ck/OkngeVjJJa3losObM+POpx5/tsn9P+S+I0abwFrePpGaS64Fn+RweBlC3i
   </data>
  </layer>
- <objectgroup id="3" name="Moving Platforms"/>
- <objectgroup id="2" name="Coins"/>
- <objectgroup id="9" name="Keys"/>
+ <objectgroup id="3" name="Moving Platforms">
+  <object id="44" gid="120" x="5136" y="664" width="128" height="128"/>
+  <object id="46" gid="121" x="5272" y="664" width="128" height="128"/>
+ </objectgroup>
+ <objectgroup id="2" name="Coins">
+  <object id="39" gid="136" x="1024" y="2824" width="128" height="128"/>
+  <object id="40" gid="136" x="768" y="3064" width="128" height="128"/>
+  <object id="41" gid="136" x="1288" y="2680" width="128" height="128"/>
+  <object id="42" gid="136" x="3592" y="2440" width="128" height="128"/>
+  <object id="43" gid="136" x="2952" y="1664" width="128" height="128"/>
+ </objectgroup>
+ <objectgroup id="9" name="Keys">
+  <object id="38" gid="157" x="3712" y="3200" width="128" height="128"/>
+ </objectgroup>
  <layer id="4" name="Background" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+   eJztzrEJACAMAEGn0ykcQ9DtTWktQhDu4Psv5X8te+CBHtXsiUszGkcrdwcAAAAAIMUGOgcDOw==
   </data>
  </layer>
  <layer id="5" name="Foreground" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+   eJztzjEBAAAIA6Dls38gQ+zQAxKQAAAAAAAfzHUAqCwuJwBL
   </data>
  </layer>
  <layer id="6" name="Don't Touch" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+   eJztw0EJADAMALGTWgfz/6uNDhJIAQAAAADwo1fjnQt4OVDd
   </data>
  </layer>
 </map>
