@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="10" nextobjectid="48">
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="10" nextobjectid="56">
  <tileset firstgid="1" source="arcade_platformer.tsx"/>
  <tileset firstgid="44" source="images/tiles/tiles.tsx"/>
- <layer id="7" name="Ladders" width="50" height="30">
+ <layer id="4" name="Background" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzwENADAIwDAE/v7tYIIAIa2CLQIAAADo9qcDirzpgCI+dvGxy5UP6JCelQIW
+   eJzt1DsKACEMRVG3ZjOuQlzFgO5eSxsZFBM/cw+8LoQoGmPO51YP0GA7an3JIzWIsFjyVkkTe/fc4Ug9AEAH+xnQwV/Dn/DeAdxs9x0XBHvvfnbgSwYdywWi
   </data>
  </layer>
  <layer id="1" name="Platforms" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztmN0KgCAMhXsm3y2w23rxCrqQ4c+2XBtxPhiiNXZmqcNlAaBPvmwbPF8L672r5SD9neEz0m0JnROpeen+Es/vAwAAAHApz6vkKcQAr9ykdZKmXkCdASJC11l+Ws9/VbP2I++FEm0z8ogwFxE0UFJhEp838SxIpOXEstai8anlYRHvpnXG1/Y56V1ST5OktqBxcmN8BlxdqFn+xwkpuC3i
+   eJztmNEKwyAMRf0m/22je9jL1g9vA3uQEKOJsYllBwKttfRebTSYUiyytwAj7uRjO+PF9IHnjyK4vlq+6P7T8U5L90zwmEijV7enxxFA95502rMgIkPp622LRE0znocVfYz0u5JMXLfyIqKPkpZODx+wD3FrNZe/LZ1X+QAP7zOev+gF+/Bcd6UeLNbVcq+18KidB4zFmGu9jc6DtE6aUeuABot5WJnoe8EdoXIB8KznNf9B5H9Hos3CR4SxiKABo6kNRnzMGgOqlvOq60ZyVVM7a33U9nhqnZOeJXGaJLUF/s5WabegV9eK5zp/eA4ZuEYb
   </data>
  </layer>
  <objectgroup id="3" name="Moving Platforms">
-  <object id="44" gid="120" x="5136" y="664" width="128" height="128"/>
-  <object id="46" gid="121" x="5272" y="664" width="128" height="128"/>
+  <object id="51" gid="126" x="3200" y="2192" width="256" height="128">
+   <properties>
+    <property name="boundary_left" type="float" value="2400"/>
+    <property name="boundary_right" type="float" value="3100"/>
+    <property name="change_x" type="float" value="2"/>
+   </properties>
+  </object>
+  <object id="52" gid="128" x="4744" y="3080" width="256" height="128">
+   <properties>
+    <property name="boundary_bottom" type="float" value="500"/>
+    <property name="boundary_top" type="float" value="800"/>
+    <property name="change_y" type="float" value="2"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="2" name="Coins">
   <object id="39" gid="136" x="1024" y="2824" width="128" height="128"/>
@@ -22,23 +34,28 @@
   <object id="41" gid="136" x="1288" y="2680" width="128" height="128"/>
   <object id="42" gid="136" x="3592" y="2440" width="128" height="128"/>
   <object id="43" gid="136" x="2952" y="1664" width="128" height="128"/>
+  <object id="48" gid="136" x="896" y="1024" width="128" height="128"/>
+  <object id="49" gid="136" x="2816" y="256" width="128" height="128"/>
+  <object id="50" gid="136" x="4736" y="128" width="128" height="128"/>
+  <object id="53" gid="136" x="6144" y="888" width="128" height="128"/>
+  <object id="54" gid="136" x="648" y="1032" width="128" height="128"/>
  </objectgroup>
  <objectgroup id="9" name="Keys">
   <object id="38" gid="157" x="3712" y="3200" width="128" height="128"/>
  </objectgroup>
- <layer id="4" name="Background" width="50" height="30">
+ <layer id="7" name="Ladders" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzrEJACAMAEGn0ykcQ9DtTWktQhDu4Psv5X8te+CBHtXsiUszGkcrdwcAAAAAIMUGOgcDOw==
+   eJzt1kERADAIxEAEUv92aoEHUzI0q+DyuwhJ253pAU1yekCTage91w4WO1h+66CzQxKVP53FDhY7WLZ0SC9c/R4HIw==
   </data>
  </layer>
  <layer id="5" name="Foreground" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzjEBAAAIA6Dls38gQ+zQAxKQAAAAAAAfzHUAqCwuJwBL
+   eJzt2G0KABAMgOGdzw3c/yJ+raSwJm30Pn/RJB8zEUQq0RNIyrou2q86YnjGRGO/AHjdi3cvkM2YD3CuAAD4g77pu79/336aB6xiWWoQt/OQWd5DfQSZNTtzBfc=
   </data>
  </layer>
  <layer id="6" name="Don't Touch" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztw0EJADAMALGTWgfz/6uNDhJIAQAAAADwo1fjnQt4OVDd
+   eJztw8EJACAMBLAbVSfo/j8/PlygYCGBJDBDPQE67BsAAACmqGT5zwPcdlLs
   </data>
  </layer>
 </map>
