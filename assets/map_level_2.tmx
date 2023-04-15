@@ -4,7 +4,7 @@
  <tileset firstgid="44" source="images/tiles/tiles.tsx"/>
  <layer id="7" name="Ladders" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt1rERACAMw8AMCPswPj0VRS7RgX4Cq3OEpGyre8Bhdg9IMroHJLntoPfawWIHy28ddHZIovKns9jBYgfLKx1ShQ1o9Aeb
+   eJzt1jESABAMRFF303Ifx9cajTEysuK/SpFifyclANaa94BJ9R5gpAzv7LbiXFmfbN15oUMLHVp+61BHBwBVEf/pL6NDCx1aonQAN3ROWwfe
   </data>
  </layer>
  <layer id="4" name="Background" width="50" height="30">
