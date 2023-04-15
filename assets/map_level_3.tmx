@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="10" nextobjectid="38">
+ <tileset firstgid="1" source="arcade_platformer.tsx"/>
+ <tileset firstgid="44" source="images/tiles/tiles.tsx"/>
+ <layer id="7" name="Ladders" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+ <layer id="1" name="Platforms" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+ <objectgroup id="3" name="Moving Platforms"/>
+ <objectgroup id="2" name="Coins"/>
+ <objectgroup id="9" name="Keys"/>
+ <layer id="4" name="Background" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+ <layer id="5" name="Foreground" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+ <layer id="6" name="Don't Touch" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+</map>
