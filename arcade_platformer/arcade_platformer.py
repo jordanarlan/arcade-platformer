@@ -22,7 +22,7 @@ PLAYER_JUMP_SPEED = 25
 
 # Player starting position
 PLAYER_START_X = 200
-PLAYER_START_Y = 128
+PLAYER_START_Y = 400
 
 # Constants used to track if the player is facing left or right
 RIGHT_FACING = 0
