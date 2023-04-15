@@ -262,7 +262,9 @@ class MyGame(arcade.Window):
         if self.reset_score:
             self.score = 0
         self.reset_score = True
-
+        
+        self.keys = 0
+        
         # Add Player Spritelist before "Foreground" layer. This will make the foreground
         # be drawn after the player, making it appear to be in front of the Player.
         # Setting before using scene.add_sprite allows us to define where the SpriteList
