@@ -4,7 +4,7 @@
  <tileset firstgid="44" source="images/tiles/tiles.tsx"/>
  <layer id="7" name="Ladders" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt17EJACAMBVF3s9V9HN/WRpAk6Cfe6wM5AoKlANjpxrkRuoVfe71AkLWjPtvC7/Qe6nejQwsdWn7rUEcHAFXW/4aaLO8THVro0JKlA7hhAlc9CCo=
+   eJzt1jESABAMRFF303Ifx9cajTEysuK/SpFifyclANaa94BJ9R5gpAzv7LbiXFmfbN15oUMLHVp+61BHBwBVEf/pL6NDCx1aonQAN3ROWwfe
   </data>
  </layer>
  <layer id="4" name="Background" width="50" height="30">
@@ -14,7 +14,7 @@
  </layer>
  <layer id="1" name="Platforms" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJzlmFEOgzAIhnsmD+CtXNzDXuZ270liE0KwLdCuVP+EaNRGPhH5Ywi+NPVOoJKuxLHu8UxcA+cXFKlrtdrQ/rtwTS7vnGbDWvpMpFGadwlj5JgE0VqQ9yfI6oM5qEqPedBdOOj7NCIHJ48ckBPlyPW3Rw4Qx8GpBwfMoS8J/A3DuZRycGtbChheezyOyOmMo+f8kDLg/sDHJMKztgajlCGK47Dmo2XT1CFqDnKf1MJbQg6aOkRZfKIXcf0xqkbhoH22Htv4jvfg0HxHcmt61kPCU4PDg6fyWA+NN7BwtKoD5+Wsvk5bD0uvaryzluNsxnOzXPovKZWTxFvg+2Bf0spv/MPrjDIH76Qfm4ZM/w==
+   eJzlmNsKgzAMhvtMPoBvteEudrPDe89ACyGkaw52TecPQVGL+YwxP6YUS8voBA7SP3Fse9wq51I+f0HBXevVE+0/hGtqeUu1OtbSZ6INad4SxsKxKKK3IO9X0tUHc1BJj0XQWTjo+zQjB6eIHJAT5Wj1d0QOEMfBaQQHzKE3CfwNw7lIObi1PQUM9z2uOVqqcYycH1oG3B/4mEZ41h7BqGUo4ji8+VjZLHUoWpPeJ/XwlpCDpQ5FHp8YRVx/zKpZOGifbXlb3vERHJbvSGvNyHpoeI7giOCpItbD4g08HL3qwHk5r6+z1sPTqxbvbOWozXhulmv/JX3LSeMt8H2wL+nlN37hdWaZg2fSB7/qTTE=
   </data>
  </layer>
  <objectgroup id="3" name="Moving Platforms">
@@ -44,7 +44,7 @@
   <object id="50" gid="136" x="4736" y="128" width="128" height="128"/>
   <object id="53" gid="136" x="6144" y="888" width="128" height="128"/>
   <object id="54" gid="136" x="648" y="1032" width="128" height="128"/>
-  <object id="56" gid="136" x="248" y="136" width="128" height="128"/>
+  <object id="56" gid="136" x="264" y="176" width="128" height="128"/>
  </objectgroup>
  <objectgroup id="9" name="Keys">
   <object id="38" gid="157" x="3712" y="3200" width="128" height="128"/>
@@ -56,7 +56,7 @@
  </layer>
  <layer id="6" name="Don't Touch" width="50" height="30">
   <data encoding="base64" compression="zlib">
-   eJztw8EJADAIBLAbtZ3A/X/9uEJBIYEksEN1gF9uBwAAgC0qOc75AN5rUn0=
+   eJztzrENACAMBLEflUzA/h1NVkAEyZauv2SOStbrB+baHcAt1QEAAMAvdrI0pwMgPVM+
   </data>
  </layer>
 </map>
