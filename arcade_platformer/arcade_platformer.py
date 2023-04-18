@@ -501,7 +501,10 @@ class MyGame(arcade.Window):
             arcade.play_sound(self.game_over)
 
         # See if the user got to the end of the level
-        if (self.player_sprite.center_x >= self.end_of_map and self.keys == 1) :
+        if (self.player_sprite.center_x >= self.end_of_map and self.keys == 1 and self.level == 3):
+            arcade.close_window()
+            print("You Win!")
+        elif (self.player_sprite.center_x >= self.end_of_map and self.keys == 1):
             # Advance to the next level
             self.level += 1
 
