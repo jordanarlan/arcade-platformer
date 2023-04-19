@@ -160,6 +160,9 @@ class InstructionView(arcade.View):
                          arcade.color.WHITE, font_size=50, anchor_x="center")
         arcade.draw_text("Click to advance", self.window.width / 2, self.window.height / 2-75,
                          arcade.color.WHITE, font_size=20, anchor_x="center")
+        arcade.draw_text("Multi-Line\ntext using\ncharacters.", self.window.width / 2, self.window.height / 2-120,
+                         arcade.color.WHITE, font_size=20, anchor_x="center",multiline=True, width=300)
+    
 
     def on_mouse_press(self, _x, _y, _button, _modifiers):
         """ If the user presses the mouse button, start the game. """
