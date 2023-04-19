@@ -145,30 +145,27 @@ class PlayerCharacter(arcade.Sprite):
 class InstructionView(arcade.View):
     """ View to show instructions """
 
-    def on_show_view(self):
+    def __init__(self):
         """ This is run once when we switch to this view """
-        arcade.set_background_color(arcade.csscolor.DARK_SLATE_BLUE)
+        super().__init__()
+        self.texture = arcade.load_texture("assets/Start_screen.png")
 
         # Reset the viewport, necessary if we have a scrolling game and we need
         # to reset the viewport back to the start so we can see what we draw.
-        arcade.set_viewport(0, self.window.width, 0, self.window.height)
+        arcade.set_viewport(0, SCREEN_WIDTH - 1, 0, SCREEN_HEIGHT - 1)
 
     def on_draw(self):
         """ Draw this view """
         self.clear()
-        arcade.draw_text("Instructions Screen", self.window.width / 2, self.window.height / 2,
-                         arcade.color.WHITE, font_size=50, anchor_x="center")
-        arcade.draw_text("Click to advance", self.window.width / 2, self.window.height / 2-75,
-                         arcade.color.WHITE, font_size=20, anchor_x="center")
-        arcade.draw_text("Multi-Line\ntext using\ncharacters.", self.window.width / 2, self.window.height / 2-120,
-                         arcade.color.WHITE, font_size=20, anchor_x="center",multiline=True, width=300)
-    
+        self.texture.draw_sized(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2,
+                                SCREEN_WIDTH, SCREEN_HEIGHT)
 
     def on_mouse_press(self, _x, _y, _button, _modifiers):
-        """ If the user presses the mouse button, start the game. """
+        """ If the user presses the mouse button, re-start the game. """
         game_view = GameView()
         game_view.setup()
         self.window.show_view(game_view)
+
 
 class GameOverView(arcade.View):
     """ View to show when game is over """
