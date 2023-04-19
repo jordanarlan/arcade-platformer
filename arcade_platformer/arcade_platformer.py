@@ -264,8 +264,8 @@ class GameView(arcade.View):
 
     def setup(self):
         """Set up the game here. Call this function to restart the game."""
-        # Set up the timer
-        self.total_time = 0.0
+        # Set up the timer to reset
+        #self.total_time = 0.0
         
         # Set up the Camera
         self.camera = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)    
@@ -380,7 +380,7 @@ class GameView(arcade.View):
         # Process up/down
         if self.up_pressed and not self.down_pressed:
             if self.physics_engine.is_on_ladder():
-                self.player_sprite.change_y = PLAYER_MOVEMENT_SPEED
+                self.player_sprite.change_y = PLAYER_MOVEMENT_SPEED * 1.1
             elif (
                 self.physics_engine.can_jump(y_distance=10)
                 and not self.jump_needs_reset
@@ -390,7 +390,7 @@ class GameView(arcade.View):
                 arcade.play_sound(self.jump_sound)
         elif self.down_pressed and not self.up_pressed:
             if self.physics_engine.is_on_ladder():
-                self.player_sprite.change_y = -PLAYER_MOVEMENT_SPEED
+                self.player_sprite.change_y = -PLAYER_MOVEMENT_SPEED * 1.1
 
         # Process up/down when on a ladder and no movement
         if self.physics_engine.is_on_ladder():
