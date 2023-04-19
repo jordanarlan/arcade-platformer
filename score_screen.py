@@ -8,7 +8,6 @@
 # The draw_score_screen method uses Arcade to draw a screen showing the ten highest scores, with the player's score highlighted if they made it onto the board. 
 # The score_input method handles text input when the player enters their name for a new high score. 
 # It updates the dictionary value for the current score with each character they enter and saves it to the JSON file once they have entered three characters.
-# Overall, this class represents a simple way to implement high scores in a game using the JSON file format. 
 
 import json
 import arcade
