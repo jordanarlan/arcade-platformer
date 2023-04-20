@@ -17,7 +17,7 @@ class Score:
         # Initialize fields with default values
         self.width = SCREEN_WIDTH
         self.height = SCREEN_HEIGHT
-        self.path = "./score.json"
+        self.path = "arcade_platformer/score.json"
         self.score_dict = {}
         self.index = -1
         self.char_count = 0
