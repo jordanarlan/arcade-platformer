@@ -29,6 +29,7 @@ RIGHT_FACING = 0
 LEFT_FACING = 1
 
 # Layer Names from our TileMap
+#LAYER_NAME_MAP_BACKGROUND = "Map Background"
 LAYER_NAME_MOVING_PLATFORMS = "Moving Platforms"
 LAYER_NAME_PLATFORMS = "Platforms"
 LAYER_NAME_COINS = "Coins"
@@ -296,6 +297,9 @@ class GameView(arcade.View):
             LAYER_NAME_LADDERS: {
                 "use_spatial_hash": True,
             },
+            #LAYER_NAME_MAP_BACKGROUND: {
+                #"use_spatial_hash": True,
+            #},
         }
 
         # Load in TileMap
